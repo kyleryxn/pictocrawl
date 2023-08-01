@@ -1,8 +1,10 @@
 # PictoCrawl
 
 [![CC License][license-badge]][license]
+[![Java CI with Maven][ci]][ci-passing]
 [![Java][java-badge]][oracle-java]
 [![Spring MVC][spring-badge]][spring]
+
 
 A multithreaded web crawler designed to extract images from a given website.
 
@@ -45,29 +47,19 @@ various research purposes:
 - [How to Read robots.txt for Web Scraping](https://www.zenrows.com/blog/robots-txt-web-scraping)
 
 <!-- Links -->
-
 [license]: http://creativecommons.org/licenses/by/4.0/
-
+[ci-passing]: https://github.com/kyleryxn/pictocrawl/actions/workflows/maven.yml
 [git-templates]: ./docs/git
-
 [oracle-java]: https://www.oracle.com/java/technologies/downloads/#java17
-
 [jakarta]: https://jakarta.ee/
-
 [spring]: https://spring.io/
-
 [thymeleaf]: https://www.thymeleaf.org/
-
 [robots-txt]: https://www.zenrows.com/blog/robots-txt-web-scraping
 
 <!-- Badges -->
-
 [license-badge]: https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg
-
+[ci]: https://github.com/kyleryxn/pictocrawl/actions/workflows/maven.yml/badge.svg
 [java-badge]: https://img.shields.io/badge/Java-JDK%2017-007396
-
 [jakarta-badge]: https://img.shields.io/badge/jakarta%20ee-10-FDB940
-
 [spring-badge]: https://img.shields.io/badge/Spring-6.0.11-6DB33F
-
 [thymeleaf-badge]: https://img.shields.io/badge/thymeleaf-3.1.1-005F0F?logo=thymeleaf
