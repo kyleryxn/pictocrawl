@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="../fragments/head.html :: head"></head>
+<body>
+
+<main>
+
+	<div class="container">
+		<header th:replace="../fragments/header.html :: header"></header>
+
+		<div class="hero">
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, possimus, sunt! Aliquam animi aut autem
+				beatae cumque ea eveniet exercitationem incidunt maiores modi nam nesciunt, quos voluptas. Autem error
+				illum laborum reiciendis vitae? Alias aliquam amet aut autem, blanditiis culpa cupiditate dicta dolor
+				dolorem dolorum ducimus earum excepturi, exercitationem fuga fugiat iusto laborum molestias nam nesciunt
+				nostrum obcaecati odio officiis, perferendis praesentium quas quasi quos repellat rerum sequi sit
+				temporibus veniam voluptate voluptates. Accusantium animi asperiores consectetur consequuntur cum dolor
+				ea esse excepturi, harum hic iure libero molestias nam nihil, officia quia quis sapiente tenetur ullam
+				velit? Aperiam asperiores aspernatur consectetur cupiditate dicta ducimus ea et excepturi expedita fuga
+				illum ipsam ipsum iste magnam maiores maxime molestiae neque nobis nulla odit officia omnis perferendis
+				quas quasi qui quibusdam repudiandae, rerum sed temporibus ut velit vitae voluptatem voluptates! At
+				atque consectetur consequatur consequuntur eligendi, enim facere fuga fugit mollitia quae, quis
+				recusandae reiciendis repellendus sapiente sunt tempora vitae. A ab accusamus accusantium amet assumenda
+				at beatae blanditiis debitis deserunt dignissimos dolor dolores doloribus ducimus eligendi est explicabo
+				hic libero minima molestiae mollitia necessitatibus nemo numquam, officia, perspiciatis quia sequi
+				soluta sunt tempora tempore temporibus totam unde veniam voluptatem? Accusantium alias asperiores culpa
+				cum dignissimos dolore dolores eius expedita harum illo ipsum molestias, nemo nostrum omnis, porro,
+				possimus ullam? A accusamus at commodi corporis delectus, dicta error est maxime minus modi mollitia
+				natus perspiciatis, quos recusandae ullam veniam voluptate? Aut doloremque doloribus illum quod ullam
+				velit veritatis voluptas voluptatum. Placeat, quam, repellat!
+			</p>
+		</div>
+
+		<hr class="separator">
+		<h2 id="stats_heading">Some Stats</h2>
+		<div class="stats" th:insert="../fragments/cards.html :: cards"></div>
+
+	</div> <!-- container -->
+</main>
+
+<script src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js" type="module"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
+
+
+<!--<form action="#" class="crawl_form">
+				<div class="url_entry">
+					<p>
+						<label for="url" id="url_label">URL:</label>
+						<input class="url_input" id="url" placeholder="https://example.com" type="text">
+					</p>
+				</div>
+				<div class="options">
+					<h3>Images to search</h3>
+					<ul class="options_list">
+						<li>
+							<button class="option" data-checkbox-id="gif_btn" id="gif_btn" onclick="toggleCheckbox('gif')"
+							        th:style="'background-image: url(' + @{/assets/images/icons/gif.png} + ')'"
+							        type="button"></button>
+							<br>
+							<input class="selection" id="gif" name="imageType" type="checkbox" value="gif">
+						</li>
+						<li>
+							<button class="option" data-checkbox-id="jpg_btn" id="jpg_btn" onclick="toggleCheckbox('jpg')"
+							        th:style="'background-image: url(' + @{/assets/images/icons/jpg.png} + ')'"
+							        type="button"></button>
+							<br>
+							<input class="selection" id="jpg" name="imageType" type="checkbox" value="jpg">
+						</li>
+						<li>
+							<button class="option" data-checkbox-id="jpeg_btn" id="jpeg_btn" onclick="toggleCheckbox('jpeg')"
+							        th:style="'background-image: url(' + @{/assets/images/icons/jpeg.png} + ')'"
+							        type="button"></button>
+							<br>
+							<input class="selection" id="jpeg" name="imageType" type="checkbox" value="jpg">
+						</li>
+						<li>
+							<button class="option" data-checkbox-id="png_btn" id="png_btn" onclick="toggleCheckbox('png')"
+							        th:style="'background-image: url(' + @{/assets/images/icons/png.png} + ')'"
+							        type="button"></button>
+							<br>
+							<input class="selection" id="png" name="imageType" type="checkbox" value="jpg">
+						</li>
+						<li>
+							<button class="option" data-checkbox-id="svg_btn" id="svg_btn" onclick="toggleCheckbox('svg')"
+							        th:style="'background-image: url(' + @{/assets/images/icons/svg.png} + ')'"
+							        type="button"></button>
+							<br>
+							<input class="selection" id="svg" name="imageType" type="checkbox" value="jpg">
+						</li>
+					</ul>
+					<div class="options_singular">
+						<label class="options_all">All Types:</label>
+						<input class="selection_all" id="option_all" onclick="toggleRadio()" type="radio" value="all">
+					</div>
+					<button class="form_submit" type="submit">Submit</button>
+				</div>
+			</form>-->

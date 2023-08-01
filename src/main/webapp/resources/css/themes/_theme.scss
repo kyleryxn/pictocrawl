@@ -1,0 +1,44 @@
+@use "../abstracts/variables" as variables;
+
+body {
+	background-color: #FFF;
+	background-size: cover;
+	height: 100vh;
+	padding: 1rem 1rem 0 1rem;
+}
+
+h1,
+h2 {
+	color: #282828;
+	font-family: variables.$main-heading-font-family;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	font-size: 5rem;
+}
+
+h2 {
+	font-size: 3rem;
+}
+
+p {
+	color: #282828;
+	font-family: variables.$base-font-family;
+}
+
+hr {
+	float: none;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0;
+	width: 300px;
+	position: relative;
+	max-width: 100%;
+	border: none;
+	background-color: #c5c5c5;
+	height: 1px;
+}

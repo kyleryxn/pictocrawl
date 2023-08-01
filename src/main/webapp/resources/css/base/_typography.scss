@@ -1,0 +1,19 @@
+@use "../abstracts/variables" as variables;
+
+// Base Font
+@font-face {
+	font-family: variables.$base-font-family;
+	src: local(OpenSans-Regular), url("../../assets/font/OpenSans-Regular.ttf");
+}
+
+// Main Header Font
+@font-face {
+	font-family: variables.$main-heading-font-family;
+	src: local(Ubuntu), url("../../assets/font/Ubuntu-Regular.ttf");
+}
+
+// Secondary Header Font
+@font-face {
+	font-family: variables.$secondary-heading-font-family;
+	src: local(Cairo), url("../../assets/font/Cairo-Regular.ttf");
+}
