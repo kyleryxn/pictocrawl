@@ -8,7 +8,8 @@ body {
 }
 
 h1,
-h2 {
+h2,
+h3 {
 	color: #282828;
 	font-family: variables.$main-heading-font-family;
 	text-align: center;
@@ -17,11 +18,19 @@ h2 {
 }
 
 h1 {
-	font-size: 5rem;
+	font-size: 6rem;
 }
 
 h2 {
 	font-size: 3rem;
+}
+
+h3 {
+	font-size: 2rem;
+}
+
+h3.subheading {
+	color: #6096BA;
 }
 
 p {

@@ -9,32 +9,25 @@
 		<header th:replace="../fragments/header.html :: header"></header>
 
 		<div class="hero">
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, possimus, sunt! Aliquam animi aut autem
-				beatae cumque ea eveniet exercitationem incidunt maiores modi nam nesciunt, quos voluptas. Autem error
-				illum laborum reiciendis vitae? Alias aliquam amet aut autem, blanditiis culpa cupiditate dicta dolor
-				dolorem dolorum ducimus earum excepturi, exercitationem fuga fugiat iusto laborum molestias nam nesciunt
-				nostrum obcaecati odio officiis, perferendis praesentium quas quasi quos repellat rerum sequi sit
-				temporibus veniam voluptate voluptates. Accusantium animi asperiores consectetur consequuntur cum dolor
-				ea esse excepturi, harum hic iure libero molestias nam nihil, officia quia quis sapiente tenetur ullam
-				velit? Aperiam asperiores aspernatur consectetur cupiditate dicta ducimus ea et excepturi expedita fuga
-				illum ipsam ipsum iste magnam maiores maxime molestiae neque nobis nulla odit officia omnis perferendis
-				quas quasi qui quibusdam repudiandae, rerum sed temporibus ut velit vitae voluptatem voluptates! At
-				atque consectetur consequatur consequuntur eligendi, enim facere fuga fugit mollitia quae, quis
-				recusandae reiciendis repellendus sapiente sunt tempora vitae. A ab accusamus accusantium amet assumenda
-				at beatae blanditiis debitis deserunt dignissimos dolor dolores doloribus ducimus eligendi est explicabo
-				hic libero minima molestiae mollitia necessitatibus nemo numquam, officia, perspiciatis quia sequi
-				soluta sunt tempora tempore temporibus totam unde veniam voluptatem? Accusantium alias asperiores culpa
-				cum dignissimos dolore dolores eius expedita harum illo ipsum molestias, nemo nostrum omnis, porro,
-				possimus ullam? A accusamus at commodi corporis delectus, dicta error est maxime minus modi mollitia
-				natus perspiciatis, quos recusandae ullam veniam voluptate? Aut doloremque doloribus illum quod ullam
-				velit veritatis voluptas voluptatum. Placeat, quam, repellat!
-			</p>
+			<div class="hero_text">
+				<h1>PictoCrawl</h1>
+				<h3 class="subheading">Picture Perfect: Extract Images Effortlessly with our Web Crawler</h3>
+				<p>
+					Harness the Power of Web Crawling to Enrich Your Visual Content
+				</p>
+				<a th:href="@{/crawl}">
+					<button class="cta crawl_cta">Begin Crawling</button>
+				</a>
+			</div>
+
+			<div class="hero_image">
+				<img th:src="@{/assets/images/heroimage.svg}" alt="Image Search">
+			</div>
 		</div>
 
-		<hr class="separator">
-		<h2 id="stats_heading">Some Stats</h2>
-		<div class="stats" th:insert="../fragments/cards.html :: cards"></div>
+	<hr class="separator">
+	<h2 class="section_heading">Some Stats</h2>
+	<div class="stats" th:insert="../fragments/statscards.html :: cards"></div>
 
 	</div> <!-- container -->
 </main>

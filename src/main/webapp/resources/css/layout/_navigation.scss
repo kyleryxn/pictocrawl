@@ -20,16 +20,16 @@
 .nav_links li a {
 	display: flex;
 	align-items: center;
-	color: #274C77;
+	color: #282828;
 	font-family: variables.$base-font-family;
 	font-size: 1.5rem;
 	text-decoration: none;
 	transition: all 0.3s ease 0s;
 }
 
-/*.nav_links li a:hover {
-	color: #2D3142;
-}*/
+.nav_links li a:hover {
+	color: #282828;
+}
 
 .nav_links li a:hover i {
 	color: #A3CEF1;
