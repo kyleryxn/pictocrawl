@@ -1,5 +1,6 @@
-@use "../abstracts/variables" as variables;
+@use "../abstracts/variables" as var;
 @use "../components/cards" as cards;
+@use "../components/buttons" as buttons;
 
 .container {
 	align-content: center;
@@ -14,13 +15,35 @@
 
 .container .hero {
 	display: flex;
+	flex-direction: row;
 	justify-content: center;
 	margin: 2rem;
 	padding: 2rem;
 	width: 50%;
 }
 
-#stats_heading {
+.hero_text,
+.hero_image {
+	padding: 1rem;
+	flex-direction: column;
+	width: 50%;
+}
+
+.hero_text {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.hero_text h3 {
+	text-transform: uppercase;
+	letter-spacing: 5px;
+}
+
+.hero_image {
+}
+
+.container .section_heading {
 	text-transform: uppercase;
 	letter-spacing: 5px;
 }
@@ -73,7 +96,7 @@
 
 .options h3 {
 	color: #FFF;
-	font-family: variables.$main-heading-font-family;
+	font-family: var.$main-heading-font-family;
 	font-weight: lighter;
 }
 
@@ -117,7 +140,7 @@
 
 .options_singular .options_all {
 	color: #FFF;
-	font-family: variables.$base-font-family;
+	font-family: var.$base-font-family;
 	margin-right: 0.5rem;
 }
 

@@ -17,9 +17,7 @@ public class ServletInitializer extends AbstractAnnotationConfigDispatcherServle
 
     @Override
     protected String[] getServletMappings() {
-        return new String[]{
-                "/", "/crawl", "/about", "/todo", "/changelog"
-        };
+        return new String[]{"/", "/crawl", "/about"};
     }
 
 }
