@@ -19,7 +19,7 @@ public class RootController {
         int totalWebsites = new Random().nextInt(10_000);
         int totalImages = new Random().nextInt(1_000_000);
         int avgImagePerPage = new Random().nextInt(10_000);
-        double speed = new Random().nextDouble(50);
+        double speed = Math.round(new Random().nextDouble(50));
 
         model.addAttribute("avgPages", avgPages);
         model.addAttribute("totalWebsites", totalWebsites);
