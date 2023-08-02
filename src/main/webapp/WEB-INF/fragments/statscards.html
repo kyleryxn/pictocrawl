@@ -19,9 +19,11 @@
 			</div>
 			<div class="content">
 				<h3>Pages Crawled</h3>
-				<p th:text="'Throughout PictoCrawl\'s journey, it has gracefully explored an average of ' +
-				${#numbers.formatDecimal(avgPages, 1, 'COMMA', 0, 'POINT')} + ' pages, spanning across ' +
-				${#numbers.formatDecimal(totalWebsites, 1, 'COMMA', 0, 'POINT')} + ' unique websites'"></p>
+				<p>
+					Throughout PictoCrawl's journey, it has gracefully explored an average of
+					<strong><span th:text="${#numbers.formatDecimal(avgPages, 1, 'COMMA', 0, 'POINT')}"></span></strong>
+					pages, spanning across <strong><span th:text="${#numbers.formatDecimal(totalWebsites, 1, 'COMMA', 0, 'POINT')}"></span></strong>
+				</p>
 			</div>
 		</div>
 	</div>
@@ -35,9 +37,12 @@
 			</div>
 			<div class="content">
 				<h3>Images Grabbed</h3>
-				<p th:text="'In its quest for visuals, PictoCrawl has successfully gathered a grand total of ' +
-				${#numbers.formatDecimal(totalImages, 1, 'COMMA', 0, 'POINT')} + ' images, showcasing an impressive average of ' +
-				 ${#numbers.formatDecimal(avgImagePerPage, 1, 'COMMA', 0, 'POINT')} + ' images per page'"></p>
+				<p>
+					In its quest for visuals, PictoCrawl has successfully gathered a grand total of
+					<strong><span th:text="${#numbers.formatDecimal(totalImages, 1, 'COMMA', 0, 'POINT')}"></span></strong>
+					images, showcasing an impressive average of
+					<strong><span th:text="${#numbers.formatDecimal(avgImagePerPage, 1, 'COMMA', 0, 'POINT')}"></span></strong>
+				</p>
 			</div>
 		</div>
 	</div>
@@ -51,8 +56,11 @@
 			</div>
 			<div class="content">
 				<h3>Average Speed</h3>
-				<p th:text="'PictoCrawl proudly flaunts its swift capabilities, navigating through an impressive average of ' +
-				${#numbers.formatDecimal(speed, 1, 'COMMA', 2, 'POINT')} + ' pages per second'"></p>
+				<p>
+					PictoCrawl proudly flaunts its swift capabilities, navigating through an impressive average of
+					<strong><span th:text="${#numbers.formatDecimal(speed, 1, 'COMMA', 2, 'POINT')}"></span></strong>
+					 pages per second
+				</p>
 			</div>
 		</div>
 	</div>
