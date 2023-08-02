@@ -273,6 +273,10 @@ template {
   margin: 2rem 0 10px;
 }
 
+.card .box .content span {
+  color: var(--clr);
+}
+
 .cta {
   border: none;
   border-radius: 1.75rem;
