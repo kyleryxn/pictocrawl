@@ -14,12 +14,12 @@ public class RootController {
         String welcomeMessage = "Hello, world!";
         model.addAttribute("welcome", welcomeMessage);
 
-        // Stats
+        // Simulated stats
         int avgPages = new Random().nextInt(10_000);
         int totalWebsites = new Random().nextInt(10_000);
-        int totalImages = 1_000_000;
+        int totalImages = new Random().nextInt(1_000_000);
         int avgImagePerPage = new Random().nextInt(10_000);
-        double speed = 32.5;
+        double speed = new Random().nextDouble(50);
 
         model.addAttribute("avgPages", avgPages);
         model.addAttribute("totalWebsites", totalWebsites);
@@ -29,7 +29,5 @@ public class RootController {
 
         return "index";
     }
-
-
 
 }
