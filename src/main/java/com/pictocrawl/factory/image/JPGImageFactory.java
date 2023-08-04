@@ -8,13 +8,13 @@ import com.pictocrawl.util.image.LogoDetector;
 public class JPGImageFactory extends ImageFactory<JPGImage> {
 
     @Override
-    public JPGImage createImage(int id, Element element) {
+    public JPGImage createImage(int id, Element element, int websiteId) {
         String url = element.absUrl("src").trim().replaceAll("\\s", "%20");
         //String encodedUrl = new URLUtility().encode(url);
         String name = element.attr("alt").trim().isEmpty() ? "N/A" : element.attr("alt").trim();
         boolean isLogo = new LogoDetector().isLogo(element);
 
-        return new JPGImage(id, name, isLogo, url);
+        return new JPGImage(id, name, isLogo, url, websiteId);
     }
 
 }

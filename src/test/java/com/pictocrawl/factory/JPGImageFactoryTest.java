@@ -33,7 +33,7 @@ class JPGImageFactoryTest {
     @Test
     void givenImageId_whenCreatingImage_thenReturnJPGImageId() {
         int id = 2;
-        image = factory.createImage(id, element);
+        image = factory.createImage(id, element, 0);
 
         assertEquals(id, image.getId());
     }
@@ -41,7 +41,7 @@ class JPGImageFactoryTest {
     @DisplayName("Test: Return Equal for Image Name")
     @Test
     void givenImageName_whenCreatingImage_thenReturnJPGImageName() {
-        image = factory.createImage(0, element);
+        image = factory.createImage(0, element, 0);
         assertEquals("Test Image", image.getName());
     }
 
@@ -49,7 +49,7 @@ class JPGImageFactoryTest {
     @Test
     void givenLogoAttributes_whenCreatingImage_thenReturnIsLogo() {
         element.attr("alt", "company-logo");
-        image = factory.createImage(0, element);
+        image = factory.createImage(0, element, 0);
 
         assertTrue(image.isLogo());
     }
@@ -57,14 +57,14 @@ class JPGImageFactoryTest {
     @DisplayName("Test: Return False for Logo")
     @Test
     void givenNonLogoAttributes_whenCreatingImage_thenReturnNotLogo() {
-        image = factory.createImage(0, element);
+        image = factory.createImage(0, element, 0);
         assertFalse(image.isLogo());
     }
 
     @DisplayName("Test: Return Equal for Image URL")
     @Test
     void givenImageUrl_whenCreatingImage_thenReturnJPGImageUrl() {
-        image = factory.createImage(0, element);
+        image = factory.createImage(0, element, 0);
         assertEquals("https://example.com/images/test-image.jpg", image.getUrl());
     }
 

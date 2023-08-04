@@ -6,6 +6,6 @@ import org.jsoup.nodes.Element;
 
 public abstract class ImageFactory<T extends Image> {
 
-    public abstract T createImage(int id, Element element);
+    public abstract T createImage(int id, Element element, int websiteId);
 
 }
