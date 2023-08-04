@@ -29,10 +29,11 @@
 		<hr class="separator">
 		<h2 class="section_heading">About</h2>
 		<div class="about">
+			<h3 class="subheading about_heading">What started out as a job interview project<br>turned into something more</h3>
+
 			<div class="about_text">
-				<h3 class="subheading">What started out as a job interview project<br>turned into something more</h3>
 				<div class="images_types">
-					<h3>Supported Types</h3>
+					<h3>Supported Formats</h3>
 					<ul class="type_list">
 						<li class="type" id="gif"><button th:style="'background-image: url(' + @{/assets/images/icons/gif.png} + ')'"></button></li>
 						<li class="type" id="jpg"><button th:style="'background-image: url(' + @{/assets/images/icons/jpg.png} + ')'"></button></li>
@@ -41,13 +42,15 @@
 						<li class="type" id="svg"><button th:style="'background-image: url(' + @{/assets/images/icons/svg.png} + ')'"></button></li>
 					</ul>
 				</div>
-				<p class="about_summary">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut cum dicta dolorem dolorum, et fugiat ipsam
-					laudantium, magnam nesciunt nostrum pariatur placeat quas quasi qui quod rem similique soluta sunt
-					tempora vero! A aliquam consequatur cum cumque eius eveniet, ex harum laborum nam nobis odio quam qui
-					quia, quo sunt.
-				</p>
-				<a th:href="@{/about}"><button class="cta about_cta">About</button></a>
+				<div class="text">
+					<p class="about_summary">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut cum dicta dolorem dolorum, et fugiat ipsam
+						laudantium, magnam nesciunt nostrum pariatur placeat quas quasi qui quod rem similique soluta sunt
+						tempora vero! A aliquam consequatur cum cumque eius eveniet, ex harum laborum nam nobis odio quam qui
+						quia, quo sunt.
+					</p>
+					<a th:href="@{/about}"><button class="cta about_cta">About</button></a>
+				</div>
 			</div>
 		</div>
 
