@@ -2,8 +2,8 @@ package com.pictocrawl.model.image;
 
 public class SVGImage extends Image {
 
-    public SVGImage(int id, String name, boolean isLogo, String url) {
-        super(id, name, isLogo, url);
+    public SVGImage(int id, String name, boolean isLogo, String url, int websiteId) {
+        super(id, name, isLogo, url, websiteId);
     }
 
     @Override
@@ -18,6 +18,7 @@ public class SVGImage extends Image {
                 ", name='" + getName() + '\'' +
                 ", isLogo=" + isLogo()+
                 ", url='" + getUrl() + '\'' +
+                ", websiteId='" + getWebsiteId() + '\'' +
                 '}';
     }
 
