@@ -178,28 +178,38 @@
 	padding: 0 3rem 3rem 3rem;
 }
 
-.about h3 {
+.about .about_text {
+	display: flex;
+	flex-direction: row;
+}
+
+.about .about_text .text {
+	margin: 2rem;
+	width: 50rem;
+	padding: 1.5rem;
+}
+
+.about .about_heading {
+	padding: 1.5rem;
 	width: 100%;
 	text-align: center;
 	margin-bottom: 2rem;
 }
 
-.about .about_summary {
-	padding: 1rem;
-	width: 25%;
-}
-
 .about .images_types {
+	padding: 1.5rem;
 	display: flex;
-	justify-content: center;
 	flex-direction: column;
-	align-items: center;
+	justify-content: center;
 	align-content: center;
-	margin-right: 2rem;
 }
 
 .images_types h3 {
-	margin-left: 2rem;
+	text-align: center;
+	padding-bottom: 2rem;
+	display: flex;
+	justify-content: center;
+	width: 100%;
 }
 
 .images_types .type_list {
@@ -216,7 +226,7 @@
 }
 
 .images_types .type_list li button {
-	background-color: #274C77;
+	background-color: #F6C959;
 	background-position: center;
 	background-position-y: -50%;
 	background-repeat: no-repeat;
