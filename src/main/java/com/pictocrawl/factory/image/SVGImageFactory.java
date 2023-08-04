@@ -8,13 +8,13 @@ import org.jsoup.nodes.Element;
 public class SVGImageFactory extends ImageFactory<SVGImage> {
 
     @Override
-    public SVGImage createImage(int id, Element element) {
+    public SVGImage createImage(int id, Element element, int websiteId) {
         String url = element.absUrl("src").trim().replaceAll("\\s", "%20");
         //String encodedUrl = new URLUtility().encode(url);
         String name = element.attr("alt").trim().isEmpty() ? "N/A" : element.attr("alt").trim();
         boolean isLogo = new LogoDetector().isLogo(element);
 
-        return new SVGImage(id, name, isLogo, url);
+        return new SVGImage(id, name, isLogo, url, websiteId);
     }
 
 }
