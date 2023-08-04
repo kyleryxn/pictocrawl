@@ -13,11 +13,20 @@
 	transition: background-color 0.2s ease-in 0s;
 }
 
-.crawl_cta {
-	margin: 2rem 0 2rem;
+.crawl_cta,
+.about_cta {
 	background-color: #274C77;
 }
 
-.crawl_cta:hover {
+.crawl_cta {
+	margin: 2rem 0 2rem;
+}
+
+.about_cta {
+	margin: 0.5rem 0 1rem;
+}
+
+.crawl_cta:hover,
+.about_cta:hover {
 	background-color: #A3CEF1;
 }
