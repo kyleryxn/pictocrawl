@@ -65,6 +65,7 @@ public class HtmlParser implements HtmlDocumentProvider, URLExtractor, ImageExtr
         Document document = getDocument(url);
         Set<Image> images = new HashSet<>();
         AtomicInteger id = new AtomicInteger(1000);
+        AtomicInteger websiteId = new AtomicInteger(1);
 
         if (document != null) {
             Elements imgTags = document.select("img[src]");
@@ -73,7 +74,7 @@ public class HtmlParser implements HtmlDocumentProvider, URLExtractor, ImageExtr
                     .map(tag -> {
                         String extension = extractor.getExtension(tag);
                         boolean isValid = imageValidator.validate(extension);
-                        return isValid ? FACTORIES.get(extension).createImage(id.getAndIncrement(), tag) : null;
+                        return isValid ? FACTORIES.get(extension).createImage(id.getAndIncrement(), tag, websiteId.getAndIncrement()) : null;
                     })
                     .filter(Objects::nonNull)
                     .collect(Collectors.toSet());

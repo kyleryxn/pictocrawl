@@ -142,7 +142,7 @@ class WebCrawlerTest {
         void givenValidUrlsImages_whenCrawling_thenVerifyCrawledData() {
             when(mockedHtmlParser.getUrls(anyString())).thenReturn(Set.of("https://example.com/path1", "https://example.com/path2"));
             when(mockedHtmlParser.getImages(anyString())).thenReturn(Set.of(new GIFImage(0, "Test Image", false,
-                    "https://example.com/images/testimage.gif")));
+                    "https://example.com/images/testimage.gif", 0)));
 
             ConcurrentMap<String, Set<Image>> crawledData = new WebCrawler("https://www.example.com/", mockedHtmlParser, mockedRobotsTxtParser).crawl();
 
