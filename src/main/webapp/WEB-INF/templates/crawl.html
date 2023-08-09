@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
 <head th:insert="~{../fragments/head.html :: head}">
-	<title>PictoCrawl | Crawl the Web</title>
+	<title>PictoCrawl | Crawl</title>
 </head>
 <body>
 
@@ -9,10 +9,65 @@
 		<div class="container">
 			<header th:replace="~{../fragments/header.html :: header}"></header>
 
-			div.
+			<div class="form">
+				<form class="crawl_form" th:action="${j}">
+
+					<div class="url_section">
+						<label for="url">URL:</label>
+						<input id="url" type="url" placeholder="https://example.com">
+					</div>
+
+					<div class="image_section">
+						<label for="images">Format:</label>
+						<div class="formats" id="images">
+							<ul class="image_list">
+								<li>
+									<button class="option" data-checkbox-id="gif_btn" id="gif_btn" onclick="toggleCheckbox('gif')"
+									        th:style="'background-image: url(' + @{/assets/images/icons/gif.png} + ')'"
+									        type="button"></button>
+									<br>
+									<input class="selection" id="gif" name="imageType" type="checkbox" value="gif">
+								</li>
+								<li>
+									<button class="option" data-checkbox-id="jpg_btn" id="jpg_btn" onclick="toggleCheckbox('jpg')"
+									        th:style="'background-image: url(' + @{/assets/images/icons/jpg.png} + ')'"
+									        type="button"></button>
+									<br>
+									<input class="selection" id="jpg" name="imageType" type="checkbox" value="jpg">
+								</li>
+								<li>
+									<button class="option" data-checkbox-id="jpeg_btn" id="jpeg_btn" onclick="toggleCheckbox('jpeg')"
+									        th:style="'background-image: url(' + @{/assets/images/icons/jpeg.png} + ')'"
+									        type="button"></button>
+									<br>
+									<input class="selection" id="jpeg" name="imageType" type="checkbox" value="jpeg">
+								</li>
+								<li>
+									<button class="option" data-checkbox-id="png_btn" id="png_btn" onclick="toggleCheckbox('png')"
+									        th:style="'background-image: url(' + @{/assets/images/icons/png.png} + ')'"
+									        type="button"></button>
+									<br>
+									<input class="selection" id="png" name="imageType" type="checkbox" value="png">
+								</li>
+								<li>
+									<button class="option" data-checkbox-id="svg_btn" id="svg_btn" onclick="toggleCheckbox('svg')"
+									        th:style="'background-image: url(' + @{/assets/images/icons/svg.png} + ')'"
+									        type="button"></button>
+									<br>
+									<input class="selection" id="svg" name="imageType" type="checkbox" value="svg">
+								</li>
+							</ul>
+							<label for="option_all">All Formats</label>
+							<input id="option_all" onclick="toggleRadio()" type="radio" value="all">
+						</div>
+					</div>
+
+				</form>
+			</div>
 
 		</div>
 	</main>
 
+	<script th:src="@{/js/iconselection.min.js}"></script>
 </body>
 </html>
