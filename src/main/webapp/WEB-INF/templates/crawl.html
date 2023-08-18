@@ -15,11 +15,11 @@
 				<li>Paste the URL of the website to search (it's recommended to paste the homepage of the site)</li>
 				<li>Select the image format you'd like to search for</li>
 			</ol>
-			<form class="crawl_form" th:action="${j}">
+			<form class="crawl_form" action="#" th:action="@{/crawl/result}" method="post">
 
 				<div class="url_section">
 					<label for="url">URL:</label>
-					<input id="url" placeholder="https://example.com" type="url">
+					<input id="url" placeholder="https://example.com" type="url" th:name="startURL">
 				</div>
 
 				<div class="image_section">
@@ -27,54 +27,49 @@
 					<div class="formats" id="images">
 						<ul class="image_list">
 							<li>
-								<button class="option" data-checkbox-id="gif_btn" id="gif_btn"
-								        onclick="toggleCheckbox('gif')"
+								<button class="option" data-checkbox-id="gif_btn" id="gif_btn" onclick="toggleCheckbox('gif')"
 								        th:style="'background-image: url(' + @{/assets/images/icons/gif.png} + ')'"
 								        type="button"></button>
 								<br>
-								<input class="selection" id="gif" name="imageType" type="checkbox" value="gif">
+								<input class="selection" id="gif" th:name="imageType" type="checkbox" value="gif">
 							</li>
 							<li>
-								<button class="option" data-checkbox-id="jpg_btn" id="jpg_btn"
-								        onclick="toggleCheckbox('jpg')"
+								<button class="option" data-checkbox-id="jpg_btn" id="jpg_btn" onclick="toggleCheckbox('jpg')"
 								        th:style="'background-image: url(' + @{/assets/images/icons/jpg.png} + ')'"
 								        type="button"></button>
 								<br>
-								<input class="selection" id="jpg" name="imageType" type="checkbox" value="jpg">
+								<input class="selection" id="jpg" th:name="imageType" type="checkbox" value="jpg">
 							</li>
 							<li>
-								<button class="option" data-checkbox-id="jpeg_btn" id="jpeg_btn"
-								        onclick="toggleCheckbox('jpeg')"
+								<button class="option" data-checkbox-id="jpeg_btn" id="jpeg_btn" onclick="toggleCheckbox('jpeg')"
 								        th:style="'background-image: url(' + @{/assets/images/icons/jpeg.png} + ')'"
 								        type="button"></button>
 								<br>
-								<input class="selection" id="jpeg" name="imageType" type="checkbox" value="jpeg">
+								<input class="selection" id="jpeg" th:name="imageType" type="checkbox" value="jpg">
 							</li>
 							<li>
-								<button class="option" data-checkbox-id="png_btn" id="png_btn"
-								        onclick="toggleCheckbox('png')"
+								<button class="option" data-checkbox-id="png_btn" id="png_btn" onclick="toggleCheckbox('png')"
 								        th:style="'background-image: url(' + @{/assets/images/icons/png.png} + ')'"
 								        type="button"></button>
 								<br>
-								<input class="selection" id="png" name="imageType" type="checkbox" value="png">
+								<input class="selection" id="png" th:name="imageType" type="checkbox" value="png">
 							</li>
 							<li>
-								<button class="option" data-checkbox-id="svg_btn" id="svg_btn"
-								        onclick="toggleCheckbox('svg')"
+								<button class="option" data-checkbox-id="svg_btn" id="svg_btn" onclick="toggleCheckbox('svg')"
 								        th:style="'background-image: url(' + @{/assets/images/icons/svg.png} + ')'"
 								        type="button"></button>
 								<br>
-								<input class="selection" id="svg" name="imageType" type="checkbox" value="svg">
+								<input class="selection" id="svg" th:name="imageType" type="checkbox" value="svg">
 							</li>
 						</ul>
 						<div class="all">
-							<label for="option_all">All Formats</label>
-							<input id="option_all" onclick="toggleRadio()" type="radio" value="all">
+							<label for="option_all">All formats</label>
+							<input id="option_all" th:name="all" onclick="toggleRadio()" type="radio" value="all">
 						</div>
 					</div>
 				</div>
 				<div class="submit">
-					<button class="cta form_submit" type="submit">Submit</button>
+					<button class="cta form_submit" type="submit">Crawl</button>
 				</div>
 			</form>
 		</div>
