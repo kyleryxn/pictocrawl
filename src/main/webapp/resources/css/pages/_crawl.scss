@@ -1,0 +1,102 @@
+@use "../abstracts/variables" as var;
+
+.container .form {
+	align-content: center;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	font-family: var.$base-font-family;
+	justify-content: center;
+	padding: 2rem;
+	width: 50rem;
+}
+
+.form h2 {
+	color: #274C77;
+	font-family: var.$secondary-heading-font-family;
+}
+
+.form ol {
+	margin-bottom: 2rem;
+}
+
+.form ol li {
+	line-height: 1.5rem;
+}
+
+.form form {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+form .url_section {
+	text-align: center;
+}
+
+form .form_submit {
+	display: flex;
+	justify-content: center;
+}
+
+.image_section label,
+.url_section label {
+	margin-right: 0.75rem;
+	vertical-align: middle;
+}
+
+.image_section .formats {
+
+}
+
+.formats .image_list {
+	align-items: center;
+	display: flex;
+	list-style: none;
+}
+
+.image_list li {
+	display: inline-block;
+	padding: 0 20px;
+}
+
+.image_list li button {
+	background-color: #274C77;
+	background-position: center;
+	background-position-y: -7px;
+	background-repeat: no-repeat;
+	border: none;
+	border-radius: 50%;
+	height: 5rem;
+	margin-right: 0.5rem;
+	transition: all 0.3s ease 0s;
+	width: 5rem;
+}
+
+.image_list li button:hover {
+	cursor: pointer;
+	opacity: 75%;
+}
+
+.image_list li .selection {
+	margin: 1rem 0 0 2rem;
+}
+
+.url_section #url {
+	vertical-align: middle;
+	width: 20rem;
+}
+
+.form .image_section {
+	margin-top: 1.5rem;
+}
+
+.form .all {
+	display: flex;
+	justify-content: center;
+	margin: 1rem;
+}
+
+.form .submit {
+}
+
