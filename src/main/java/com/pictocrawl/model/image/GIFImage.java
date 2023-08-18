@@ -8,7 +8,7 @@ public class GIFImage extends Image {
 
     @Override
     public String getType() {
-        return GIFImage.class.getTypeName();
+        return "GIF";
     }
 
     @Override
