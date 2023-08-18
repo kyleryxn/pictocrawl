@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head th:insert="~{../fragments/head.html :: head}">
+	<title>PictoCrawl | Crawl</title>
+</head>
+<body>
+
+<main>
+	<div class="container">
+		<header th:replace="~{../fragments/header.html :: header}"></header>
+
+		<div class="result">
+			<h2>Results</h2>
+			<table>
+				<tr th:each="image : ${images}">
+					<td th:text="${image.url}"></td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</main>
+
+</body>
+</html>

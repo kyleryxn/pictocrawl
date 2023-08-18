@@ -8,7 +8,7 @@ public class SVGImage extends Image {
 
     @Override
     public String getType() {
-        return null;
+        return "SVG";
     }
 
     @Override

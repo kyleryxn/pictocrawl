@@ -8,7 +8,7 @@ public class JPGImage extends Image {
 
     @Override
     public String getType() {
-        return null;
+        return "JPG";
     }
 
     @Override
