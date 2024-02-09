@@ -18,8 +18,12 @@ import org.thymeleaf.templatemode.TemplateMode;
 @ComponentScan({"com.pictocrawl"})
 public class SpringWebConfig implements WebMvcConfigurer {
 
+    private final ApplicationContext applicationContext;
+
     @Autowired
-    private ApplicationContext applicationContext;
+    public SpringWebConfig(ApplicationContext applicationContext) {
+        this.applicationContext = applicationContext;
+    }
 
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {

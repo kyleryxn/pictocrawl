@@ -5,7 +5,7 @@ import com.pictocrawl.util.Validator;
 import java.util.List;
 
 public class ImageValidator implements Validator {
-    private static final List<String> VALID_EXTENSIONS = List.of("gif", "jpeg", "jpg", "png", "svg", "webp");
+    private static final List<String> VALID_EXTENSIONS = List.of("gif", "jpeg", "jpg", "png", "svg");
 
     @Override
     public boolean validate(String extension) {

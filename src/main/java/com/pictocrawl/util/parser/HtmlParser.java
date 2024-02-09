@@ -44,11 +44,10 @@ public class HtmlParser implements HtmlDocumentProvider, URLExtractor, ImageExtr
 
     public HtmlParser(String startURL, CloseableHttpClient httpClient) {
         FACTORIES.put("gif", new GIFImageFactory());
-        FACTORIES.put("jpeg", new JPGImageFactory());
+        FACTORIES.put("jpeg", new JPEGImageFactory());
         FACTORIES.put("jpg", new JPGImageFactory());
         FACTORIES.put("png", new PNGImageFactory());
         FACTORIES.put("svg", new SVGImageFactory());
-        FACTORIES.put("webp", new JPGImageFactory());
 
         this.startURL = startURL;
         this.httpClient = httpClient;
