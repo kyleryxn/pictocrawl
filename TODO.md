@@ -37,7 +37,7 @@ A comprehensive list of items that need to be completed for the project.
 8. Consider adding validation checks to ensure the integrity of the website information stored in the `Website` object.
 9. Review the final implementation to gather feedback and make necessary improvements.
 
-### Website Class Implementation
+### RobotsTxt Class Implementation
 
 - [ ] **File:** [RobotsTxt][robotstxt-class]
   - **Description:** Create a Java class responsible for representing a website's `robots.txt` file.
