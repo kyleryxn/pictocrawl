@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
 <head th:insert="~{../fragments/head.html :: head}">
-	<title>PictoCrawl | Crawl</title>
+	<title>PictoCrawl | Crawl Results</title>
 </head>
 <body>
 
@@ -11,7 +11,7 @@
 
 		<div class="result">
 			<h2>Results</h2>
-			<table>
+			<table class="results">
 				<tr th:each="image : ${images}">
 					<td th:text="${image.url}"></td>
 				</tr>
