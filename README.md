@@ -2,9 +2,6 @@
 
 [![CC License][license-badge]][license]
 [![Java CI with Maven][ci]][ci-passing]
-[![Java][java-badge]][oracle-java]
-[![Spring MVC][spring-badge]][spring]
-
 
 A multithreaded web crawler designed to extract images from a given website.
 
