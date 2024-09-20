@@ -1,3 +1,5 @@
+## This repo will no longer be updated. See it's replacement [Photon](https://github.com/kyleryxn/photon)
+
 # PictoCrawl
 
 [![CC License][license-badge]][license]
